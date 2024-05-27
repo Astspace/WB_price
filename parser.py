@@ -28,10 +28,8 @@ class Parse:
 
     def __create_item_obj(self, item_data: dict):
         item_obj = Item.parse_obj(item_data)
-        print(item_obj)
-        print(type(item_obj))
         return item_obj
 
 
 if __name__ == "__main__":
-    Parse("17902726").parse()
+    print(Parse("17902726").parse().id)
